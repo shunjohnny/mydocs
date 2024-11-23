@@ -1,0 +1,57 @@
+/* 表全体の角を丸くする */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%; /* テーブル全体を幅いっぱいに広げる */
+}
+
+/* 表ヘッダーのスタイル */
+table th {
+    background-color: #FF6B7A;
+    color: #ffffff; /* 黒文字 */
+    padding: 10px;
+    text-align: center !important; /* 中央揃えに強制 */
+    vertical-align: middle; /* 縦方向も中央に配置 */
+}
+
+/* 表のセルの背景色と文字色 */
+table td {
+    background-color: #FFFFFF; /* 白背景 */
+    color: #000000; /* 黒文字 */
+    padding: 10px;
+    text-align: left; /* 通常のセルは左揃え */
+}
+
+/* 表の上側（ヘッダー）の左上と右上の角を丸くする */
+table th:first-child {
+    border-top-left-radius: 5px;
+}
+
+table th:last-child {
+    border-top-right-radius: 5px;
+}
+
+/* 表の下側（最終行）の左下と右下の角を丸くする */
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #009485; /* クリムゾン色に設定 */
+}
+
+.md-typeset__table {
+    display: flex;
+    justify-content: center;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+    width: auto; /* 固定幅を解除し、コンテンツに応じて自動調整 */
+    min-width: auto; /* MkDocsのデフォルトの最小幅制限を解除 */
+}

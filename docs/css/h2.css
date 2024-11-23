@@ -1,0 +1,20 @@
+/* 二次見出し（##）のスタイル */
+h2 {
+    background-color: #009485; /* 見出しの背景色を薄い青に */
+    color: #ffffff; /* 見出しの文字色をダークグレーに */
+    padding: 10px; /* 見出しの内側の余白 */
+    border-left: 5px solid #15778b; /* 左側にクリムゾン色の太線 */
+    font-weight: bold; /* 太字で強調 */
+    border-radius: 15px; /* 角を丸くして柔らかい印象に */
+    margin-top: 40px; /* 見出しの上部余白 */
+    margin-bottom: 10px; /* 見出しの下部余白 */
+}
+
+/* 二次見出し（##）のスタイル */
+h3 {
+    color: #009485;
+    font-weight: bold; /* 太字で強調 */
+    margin-bottom: 10px; /* 見出しの下部余白 */
+}
+
+

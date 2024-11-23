@@ -1,0 +1,52 @@
+/* チャット全体のコンテナ */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* 左寄せ (春日部つむぎ) */
+  .chat.left {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .chat.left .chat-message {
+    background-color: #fffacd; /* 春日部つむぎのメッセージの背景色を黄色に */
+    border-radius: 10px;
+    padding: 10px;
+    border-left: 4px solid #ffeb3b; /* 黄色系のボーダー */
+    color: black; /* テキストの色を黒に固定 */
+  }
+  
+  .chat.left .avatar {
+    order: -1; /* アバターをメッセージの左に配置 */
+    margin-right: 10px;
+  }
+  
+  /* 右寄せ (ずんだもん) */
+  .chat.right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  
+  .chat.right .chat-message {
+    background-color: #ccffcc; /* ずんだもんのメッセージの背景色を黄緑に */
+    border-radius: 10px;
+    padding: 10px;
+    border-right: 4px solid #6c757d; /* グレー系のボーダー */
+    color: black; /* テキストの色を黒に固定 */
+  }
+  
+  .chat.right .avatar {
+    margin-left: 10px;
+  }
+  
+  /* アバター画像 */
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
